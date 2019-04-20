@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffaf7;
+  line-height: 1.3;
+}
+main {
+  max-width: 38rem;
+  padding: 1.5rem;
+  margin: auto;
+}
+header {
+  margin-bottom: 1.5rem;
+}
+h1 {
+  margin-bottom: .5rem;
+}
+time {
+  color: #888;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+  margin: 2rem auto;
+}
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+a {
+  color: #ff3c3c;
+  text-decoration: none;
+  outline: 0;
+}
+a:hover {
+  text-decoration: underline;
+}
+::selection {
+  background-color: #fff888;
+}
+
+#desc {
+    min-height: 6rem;
+    font-size: 200%;
+}
+
+button, input {
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+#card {
+    display: none;
+}
+
+input.correct {
+    color: green;
+    background: #afa;
+}
+
+#card {
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#everything.correct {
+    background: #cfc;
+    background: url('cheer.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100vh;
+}
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: thin solid black;
+}
+.frac span.symbol {
+    display: none;
+}
+
