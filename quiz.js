@@ -197,7 +197,7 @@ function fillCard(stanza) {
   $$('answer').innerHTML = "";
   $$('diff').innerHTML = "";
   $$('prompt').textContent =
-    "What is the " + toKey + " for this " + fromKey + "?";
+    "What is the " + toKey + " for this?";
   $$('desc').textContent = censor(stanza.desc, stanza.word);
   // $$('pos').innerHTML = stanza.pos;
   // $$('audio_src').src = stanza.audio;
