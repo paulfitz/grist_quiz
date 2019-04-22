@@ -46,6 +46,7 @@ function strip(txt) {
 var params = getParams(window.location);
 var fromKey = params.from || 'hint';
 var toKey = params.to || 'answer';
+var selectKey = params.select;
 
 function populateStorage() {
   activeIndex = null;
@@ -229,8 +230,11 @@ function start() {
     .then(function(quiz) {
       console.log(quiz);
       dictionary = [];
-      console.log("KEYS", fromKey, toKey);
+      console.log("KEYS", fromKey, toKey, selectKey);
       for (var i = 0; i < quiz.id.length; i++) {
+        if (selectKey) {
+          if (!quiz[selectKey][i]) { continue; }
+        }
         dictionary.push({
           word: quiz[toKey][i],
           desc: quiz[fromKey][i]
